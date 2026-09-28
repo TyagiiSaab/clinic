@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Appointment | Aarogya Family Clinic (Sample)</title>
+<meta name="description" content="Request an appointment at Aarogya Family Clinic, Baner Pune. Enquiry form with preferred doctor, date and time. The clinic confirms every slot personally.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="appointment">
+<div class="topbar"><div class="wrap"><div>Baner Road, Pune <span class="dot">•</span> <span class="hide-m">Mon–Sat: 10am–2pm &amp; 5:30–9pm</span></div><div><a data-phone-href href="tel:+919822012345"><span data-phone-text>+91 98220 12345</span></a></div></div></div>
+<header class="site-header"><div class="wrap nav-row">
+<a class="brand" href="index.html"><span class="brand-mark">A<em>+</em></span><span class="brand-text"><strong>Aarogya Family Clinic</strong><small>Baner • Pune (Sample)</small></span></a>
+<nav class="nav-links"><a data-nav="home" href="index.html">Home</a><a data-nav="about" href="about.html">About Us</a><a data-nav="doctors" href="doctors.html">Doctors</a><a data-nav="services" href="services.html">Services</a><a data-nav="patient" href="patient-info.html">Patient Info</a><a data-nav="contact" href="contact.html">Contact</a><a class="btn btn-primary btn-sm" href="appointment.html">Book Appointment</a></nav>
+<button class="hamburger" id="menuBtn" aria-label="Open menu">☰</button></div></header>
+<div class="drawer" id="drawer"><div class="drawer-scrim"></div><div class="drawer-panel"><button class="drawer-close" id="drawerClose">✕ Close</button><a class="dlink" data-nav="home" href="index.html">Home</a><a class="dlink" data-nav="about" href="about.html">About Us</a><a class="dlink" data-nav="doctors" href="doctors.html">Doctors</a><a class="dlink" data-nav="services" href="services.html">Services</a><a class="dlink" data-nav="patient" href="patient-info.html">Patient Information</a><a class="dlink" data-nav="contact" href="contact.html">Contact Us</a><a class="btn btn-primary" href="appointment.html" style="margin-top:10px">Book Appointment</a></div></div>
+
+<main>
+<div class="page-hero"><div class="wrap"><div class="breadcrumb"><a href="index.html">Home</a> / Book Appointment</div><span class="eyebrow">Appointment enquiry</span><h1>Request an appointment.</h1><p class="lead">Fill in your details and preferred slot. <strong>Submitting this form does not confirm an appointment</strong> — the clinic will contact you to confirm the date and time.</p></div></div>
+
+<section><div class="wrap two-col">
+<div class="form-card">
+<form data-demo-form data-success="Thank you — demo enquiry received. In production, connect this form to email, WhatsApp or a booking system so the clinic actually receives it." novalidate>
+<div class="form-grid">
+<div class="field"><label for="pname">Patient's name *</label><input id="pname" name="name" type="text" autocomplete="name" placeholder="e.g. Priya Sharma" required><span class="error">Please enter the patient's name.</span></div>
+<div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 …" required><span class="error">Please enter a valid phone number.</span></div>
+<div class="field"><label for="email">Email address <span class="hint">(optional)</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com"><span class="error">Please enter a valid email, or leave it blank.</span></div>
+<div class="field"><label for="doc">Preferred doctor <span class="hint">(optional)</span></label><select id="doc" name="doctor"><option value="">No preference</option><option>Dr. Ananya Desai (sample)</option><option>Dr. Rahul Menon (sample)</option><option>Dr. Sara Thomas (sample)</option></select></div>
+<div class="field"><label for="date">Preferred date *</label><input id="date" name="date" type="date" required><span class="error">Please choose a preferred date.</span></div>
+<div class="field"><label for="time">Preferred time *</label><select id="time" name="time" required><option value="">Select…</option><option>Morning (10am–12pm)</option><option>Midday (12–2pm)</option><option>Evening (5:30–7:30pm)</option><option>Evening (7:30–9pm)</option></select><span class="error">Please choose a preferred time.</span></div>
+<div class="field full"><label for="reason">Reason for visit <span class="hint">(short, optional — no sensitive details)</span></label><input id="reason" name="reason" type="text" placeholder="e.g. fever since 2 days / routine review"><span class="error"></span></div>
+<div class="field full"><label for="msg">Additional message <span class="hint">(optional)</span></label><textarea id="msg" name="message" placeholder="Anything the clinic should know before calling back?"></textarea></div>
+<div class="field full"><label class="consent"><input type="checkbox" id="consent" required style="width:auto;margin-top:4px"> <span>I agree that the clinic may contact me about this enquiry by phone, SMS or WhatsApp. *</span></label><span class="error">Please tick the consent box so we can contact you.</span></div>
+</div>
+<p style="margin-top:18px"><button class="btn btn-primary" type="submit" style="width:100%">Request an Appointment</button></p>
+<p class="hint">Demo form — visually complete and ready for backend integration, but it does not currently send or store requests. Do not enter sensitive medical details.</p>
+<div class="form-status" role="status" aria-live="polite"></div>
+</form>
+</div>
+<div class="contact-side">
+<div class="contact-tile"><h3>Prefer to talk directly?</h3><p>Call the clinic during working hours, or message on WhatsApp with your name + preferred day/time.</p><p><a data-phone-href href="tel:+919822012345">📞 <span data-phone-text>+91 98220 12345</span></a><br><a data-whatsapp href="#">💬 WhatsApp the clinic</a><br><a href="contact.html">→ Visit the contact page</a></p><p style="font-size:.85rem;color:#9FB2C4">Sample numbers — replace with real clinic contacts.</p></div>
+<div class="notice">Submitting an enquiry is only a request. Your slot is confirmed <strong>only when the clinic contacts you back</strong> with a date and time. For emergencies, do not use this form — call emergency services or visit the nearest emergency department.</div>
+</div>
+</div></section>
+</main>
+
+<footer class="site-footer"><div class="wrap footer-grid">
+<div class="footer-brand"><span class="brand-mark">A<em>+</em></span><strong>Aarogya Family Clinic</strong><p>Sample text — replace with the clinic's own introduction.</p></div>
+<div><h4>Quick links</h4><p><a href="about.html">About Us</a><br><a href="doctors.html">Doctors</a><br><a href="services.html">Services</a><br><a href="patient-info.html">Patient Information</a><br><a href="contact.html">Contact Us</a></p></div>
+<div><h4>Help</h4><p><a href="patient-info.html">First visit guide</a><br><a href="privacy.html">Privacy Policy</a><br><a href="terms.html">Terms</a></p></div>
+<div><h4>Visit us (sample)</h4><p>Sunrise Plaza, Baner Road, Pune 411045<br><a data-phone-href href="tel:+919822012345"><span data-phone-text>+91 98220 12345</span></a></p></div>
+</div><div class="wrap disclaimer">General information only — not medical advice. • <a href="privacy.html">Privacy Policy</a> • <a href="terms.html">Terms</a></div>
+<div class="wrap footer-bottom"><span>© <span data-year>2026</span> Aarogya Family Clinic (demo).</span><span><a href="index.html">Home</a></span></div></footer>
+<nav class="mobile-bar"><a class="call" data-phone-href href="tel:+919822012345">Call</a><a class="call" data-whatsapp href="#">WhatsApp</a><a class="book" href="appointment.html">Book</a></nav>
+<script src="js/main.js"></script></body></html>
